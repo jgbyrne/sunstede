@@ -1,0 +1,41 @@
+sites = [
+    wren {
+        title = "Wren"
+	subtitle = "Thoughts about Wrens"
+	
+	views = [page; index; annals]
+	
+	servers = [
+	    www
+	    gemini
+	    
+	    www + gemini { addr = "wren.spqr.net" }
+	]
+    }
+
+    robin {
+        title = "Robin"
+	subtitle = "Musings on Robins"
+	
+	views = [page; annals]
+
+	servers = [
+	    gemini { addr = "robin.spqr.net" }
+	]
+    }
+
+    spqr {
+        title = "SPQR"
+	subtitle = "Speaker's Corner"
+	
+	views = [
+	    page { mount = "/speech" }
+	    index
+	]
+	
+	servers = [
+	    www { addr = "spqr.net" }
+	]
+    }
+
+]
