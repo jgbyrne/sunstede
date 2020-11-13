@@ -1,3 +1,13 @@
+servers = [
+    www {
+        renderer = "web"
+    }
+
+    gemini {
+        renderer = "gemini"
+    }
+]
+
 sites = [
     wren {
         title = "Wren"
@@ -37,5 +47,4 @@ sites = [
 	    www { addr = "spqr.net" }
 	]
     }
-
 ]
